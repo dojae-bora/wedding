@@ -152,7 +152,8 @@ a {
    ═══════════════════════════════════════════ */
 .main-container {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ─── Section Base ─── */
@@ -1197,4 +1198,9 @@ a {
         opacity: 1 !important;
         transform: none !important;
     }
+}
+html,
+body {
+   overflow-x: hidden;
+   width: 100%;
 }
