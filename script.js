@@ -394,12 +394,15 @@
 
   let viewerImages = [];
   let viewerIndex = 0;
+  let viewerScrollY = 0;
   let touchStartX = 0;
   let touchEndX = 0;
 
   function openViewer(images, index) {
     viewerImages = images;
     viewerIndex = index;
+    viewerScrollY = window.scrollY;
+    
     showViewerImage();
     $('#photoViewer').classList.add('active');
     document.body.classList.add('no-scroll');
@@ -408,6 +411,11 @@
   function closeViewer() {
     $('#photoViewer').classList.remove('active');
     document.body.classList.remove('no-scroll');
+
+    setTimeout(() => {
+      window.scrollTo(0, viewerScrollY);
+    }, 0);
+    
     const img = $('#viewerImage');
     if (img) img.style.transform = '';
   }
