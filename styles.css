@@ -75,7 +75,7 @@ a {
         );
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    box-shadow: inset -2-px 0 30px rgba(0,0,0,0.98), inset 20px 0 30px rgba(255,255,255,0.3);
+    box-shadow: inset -35px 0 45px rgba(0,0,0,0.12), inset 35px 0 45px rgba(255,255,255,0.35);
     position: relative;
 }
 
