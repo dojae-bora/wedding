@@ -336,7 +336,6 @@
       const div = document.createElement('div');
       div.className = 'story-image-container fade-in-left';
       div.innerHTML = `<img src="${src}" alt="스토리 사진 ${i + 1}" loading="lazy">`;
-      div.addEventListener('click', () => openViewer(storyImages, i));
 
       if (i === 0) {
         topContainer.appendChild(div);
