@@ -477,7 +477,7 @@ a {
    display: none;
 }
 
-.gallery-thumb {
+.gallery-thumbs {
    flex: 0 0 72px;
    heigh: 72px;
    border-radius: 8px;
