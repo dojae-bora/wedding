@@ -496,7 +496,8 @@ a {
 
 .gallery-thumb.is-active {
    opacity: 1;
-   border: 3px solid #4a4a4a;
+   border: 3px solid #666;
+   transform: scale(1.05);
 }
 
 .gallery-thumb img {
