@@ -210,7 +210,7 @@ a {
     font-size: 14px;
     letter-spacing: 2px;
     color: #888;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-out 0.5s forwards;
