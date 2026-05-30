@@ -204,7 +204,7 @@
     if (heroImg) heroImg.src = 'images/hero/1.jpg';
 
     $('#heroDate').textContent = formatDateShort(CONFIG.wedding.date, CONFIG.wedding.time);
-    $('#heroNames').textContent = `${CONFIG.groom.name} & ${CONFIG.bride.name}`;
+    $('#heroNames').textContent = `${CONFIG.groom.name} ♡ ${CONFIG.bride.name}`;
     $('#heroVenue').textContent = CONFIG.wedding.venue;
 
     // Parents info
