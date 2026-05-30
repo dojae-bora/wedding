@@ -478,8 +478,9 @@ a {
 }
 
 .gallery-thumb {
-   flex: 0 0 72px;
-   height: 72px;
+   flex: 0 0 90px;
+   width: 90px
+   height: 90px;
    border-radius: 8px;
    overflow: hidden;
    cursor: pointer;
@@ -489,7 +490,7 @@ a {
 
 .gallery-thumb.is-active {
    opacity: 1;
-   border: 3px solid #d41f37;
+   border: 3px solid #4a4a4a;
 }
 
 .gallery-thumb img {
