@@ -468,9 +468,15 @@ a {
 
 .gallery-thumbs {
    display: flex;
+   flex-wrap: nowrap;
    gap: 8px;
-   overflow-x: auto;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
    padding-bottom: 8px;
+   -webkit-overflow-scrolling: touch;
 }
 
 .gallery-thumbs::-webkit-scrollbar {
@@ -479,7 +485,7 @@ a {
 
 .gallery-thumb {
    flex: 0 0 90px;
-   width: 90px
+   width: 90px;
    height: 90px;
    border-radius: 8px;
    overflow: hidden;
