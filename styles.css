@@ -186,7 +186,7 @@ a {
     position: relative;
 }
 
-.hero-image-container::afeter {
+.hero-image-container::after {
    content: "";
    position: absolute;
    left: 0;
@@ -197,11 +197,11 @@ a {
 
    background: linear-gradient(
       to bottom,
-      rgba(245,243,240,0) 0%
-      rgba(245,243,240,0.2) 30%
-      rgba(245,243,240,0.5) 60%
-      rgba(245,243,240,0.85) 85%
-      #f5f3f0 100%
+      rgba(245,243,240,0) 0%,
+      rgba(245,243,240,0.2) 30%,
+      rgba(245,243,240,0.5) 60%,
+      rgba(245,243,240,0.85) 85%,
+      #f5f3f0 100%,
       );
    
    pointer-events: none;
