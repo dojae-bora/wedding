@@ -201,10 +201,12 @@ a {
       rgba(245,243,240,0.2) 30%,
       rgba(245,243,240,0.5) 60%,
       rgba(245,243,240,0.85) 85%,
-      #f5f3f0 100%,
+      #f5f3f0 100%
       );
    
    pointer-events: none;
+   z-index: 10;
+   display: block;
 }
 
 .hero-image {
