@@ -359,9 +359,10 @@
 
   function initGallery(galleryImages) {
     galleryImagesList = galleryImages;
+    
+    const mainImg = $('#galleryMainImage');
     const grid = $('#galleryGrid');
-
-    // Remove loading placeholder
+    
     const placeholder = grid.querySelector('.loading-placeholder');
     if (placeholder) placeholder.remove();
 
@@ -369,24 +370,29 @@
       const section = $('#gallerySection');
       if (section) section.style.display = 'none';
       return;
-    }
+  }
 
-    galleryImages.forEach((src, i) => {
-      const div = document.createElement('div');
-      div.className = 'gallery-item scale-in';
-      div.style.setProperty('--delay', i);
-      div.setAttribute('data-index', i);
-      div.innerHTML = `<img src="${src}" alt="갤러리 사진 ${i + 1}" loading="lazy">`;
-      div.addEventListener('click', () => openViewer(galleryImages, i));
-      grid.appendChild(div);
+  mainImg.src = galleryImages[0];
+
+  galleryImages.forEach((src, i) => {
+    const div = document.createElement('div');
+    div.className = 'gallery-thumb scale-in';
+    div.style.setProperty('--delay', i);
+    div.innerHTML = `<img src="${src}" alt="갤러리 사진 ${i + 1}" loading="lazy">`;
+
+    div.addEventListener('click', () => {
+      mainImg.src = src;
+      
+      $$('.gallery-thumb').forEach(el => el.classList.remove('is-active'));
+      div.classList.add('is-active');
     });
 
-    // Update viewer total count
-    $('#totalCount').textContent = galleryImages.length;
+    if (i === 0) div.classList.add('is-active');
+    grid.appendChild(div);
+  });
 
-    // Re-observe new elements for scroll animations
-    observeNewElements();
-  }
+  observeNewElements();
+}
 
   /* ═══════════════════════════════════════════
      Photo Viewer (with swipe)
