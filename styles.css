@@ -445,9 +445,10 @@ a {
 }
 
 .gallery-subtitle {
-    font-size: 13px;
-    color: #888;
-    margin-bottom: 40px;
+    font-size: 12px;
+    color: rgba(150,150,150,0.55);
+    letter-spacing: 2px;
+    margin-bottom: italic;
 }
 
 .gallery-grid {
