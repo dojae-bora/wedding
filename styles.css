@@ -67,11 +67,11 @@ a {
     background:
         linear-gradient(
             90deg,
-            rgba(70, 52, 44, 0.95) 0px,
-            rgba(120, 92, 78, 0.98) 35px,
-            rgba(55, 38, 34, 0.96) 70px,
-            rgba(145, 112, 92, 0.95) 110px,
-            rgba(65, 45, 40, 0.98) 160px
+            rgba(255, 255, 255, 0.98) 0px,
+            rgba(235, 232, 228, 0.96) 35px,
+            rgba(250, 248, 245, 0.98) 70px,
+            rgba(225, 222, 218, 0.95) 110px,
+            rgba(255, 255, 255, 0.98) 160px
         );
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
