@@ -139,6 +139,10 @@
     }
 
     setTimeout(() => {
+  curtain.classList.add('opening');
+}, 1200);
+    
+    setTimeout(() => {
       curtain.classList.add('hidden');
     }, 5000);
   }
