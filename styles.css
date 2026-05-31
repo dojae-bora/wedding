@@ -101,17 +101,11 @@ a {
 .curtain-left {
     box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.05);
     transition: transform 3s ease-in-out;
-
-   border-top-left-radius: 80px;
-   border-bottom-left-radius: 120px;
 }
 
 .curtain-right {
     box-shadow: inset 10px 0 20px rgba(0, 0, 0, 0.05);
     transition: transform 3s ease-in-out;
-
-   border-top-left-radius: 80px;
-   border-bottom-left-radius: 120px;
 }
 
 .curtain-overlay.opening .curtain-left {
