@@ -109,7 +109,7 @@ a {
 }
 
 .curtain-overlay.opening .curtain-left {
-   transform: translateX(-100);
+   transform: translateX(-100%);
 }
 
 .curtain-overlay.opening .curtain-right {
