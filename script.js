@@ -139,6 +139,7 @@
     }
 
     setTimeout(() => {
+      document.getElementById('bgm').play();
   curtain.classList.add('opening');
 }, 1200);
     
