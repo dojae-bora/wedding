@@ -662,7 +662,7 @@
     initCountdown();
     initCalendar();
 
-    unlodkBgmOnce():
+    unlockBgmOnce():
 
     // Show loading placeholders while detecting images
     showLoadingPlaceholders();
