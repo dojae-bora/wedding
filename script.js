@@ -697,11 +697,11 @@
 
   const playBgm = () => {
     bgm.play().catch(() => {});
-    document.removeEventListener('click', playBgm);
     document.removeEventListener('touchstart', playBgm);
+    document.removeEventListener('click', playBgm);
   };
 
-  document.addEventListener('click', playBgm);
   document.addEventListener('touchstart', playBgm);
+  document.addEventListener('click', playBgm);
 }
 })();
