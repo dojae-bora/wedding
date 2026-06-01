@@ -662,8 +662,6 @@
     initCountdown();
     initCalendar();
 
-    unlockBgmOnce():
-
     // Show loading placeholders while detecting images
     showLoadingPlaceholders();
 
