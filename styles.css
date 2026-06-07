@@ -521,13 +521,15 @@ a {
     margin: 0 auto 12px;
     border-radius: 12px;
     overflow: hidden;
+    min-height: 500px;
 }
 
 .gallery-main img {
    width: 100%;
    display: block;
-   aspect-ratio: 4 / 5;
-   object-fit: cover;
+   max-height: 560px;
+   object-fit: dontain;
+   margin: 0 auto;
 }
 
 .gallery-thumbs {
