@@ -118,10 +118,10 @@
     };
     setMeta('property', 'og:title', m.title);
     setMeta('property', 'og:description', m.description);
-    setMeta('property', 'og:image', 'https://dojae-bora.github.io/wedding/images/og/1.jpg?v=2');
+    setMeta('property', 'og:image', 'https://dojae-bora.github.io/wedding/images/og/1.jpg?v=3');
     setMeta('name', 'twitter:title', m.title);
     setMeta('name', 'twitter:description', m.description);
-    setMeta('name', 'twitter:image', 'https://dojae-bora.github.io/wedding/images/og/1.jpg?v=2');
+    setMeta('name', 'twitter:image', 'https://dojae-bora.github.io/wedding/images/og/1.jpg?v=3');
     setMeta('name', 'description', m.description);
   }
 
