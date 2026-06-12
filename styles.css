@@ -250,14 +250,14 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center top;
     animation: heroZoomIn 2s ease-out forwards;
 }
 
 @keyframes heroZoomIn {
     0% {
         opacity: 0;
-        transform: scale(1.1);
+        transform: scale(1.0.2);
     }
     100% {
         opacity: 1;
