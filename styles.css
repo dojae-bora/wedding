@@ -216,7 +216,7 @@ a {
 
 .hero-image-container {
     width: 100%;
-    aspect-ratio: 3 / 3.6;
+    aspect-ratio: 3 / 4;
     max-height: 600px;
     overflow: hidden;
     position: relative;
