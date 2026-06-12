@@ -216,7 +216,7 @@ a {
 
 .hero-image-container {
     width: 100%;
-    aspect-ratio: 3 / 4.3;
+    aspect-ratio: 3 / 4;
     max-height: none;
     overflow: hidden;
     position: relative;
@@ -249,7 +249,7 @@ a {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center top;
     animation: heroZoomIn 2s ease-out forwards;
 }
