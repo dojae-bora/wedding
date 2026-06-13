@@ -58,7 +58,10 @@ a {
     height: 100%;
     z-index: 9999;
     display: flex;
+    justify-content: center;
+    align-items: center;
     pointer-events: none;
+   background: #f7f3ee
 }
 
 .curtain {
@@ -1311,6 +1314,13 @@ body {
 /* ═══════════════════════════
    Letter Intro
    ═══════════════════════════ */
+
+.letter-intro{
+   background:#f7f3ee;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
 
 .letter-card{
     position:relative;
