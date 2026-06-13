@@ -68,6 +68,7 @@ a {
 
 .curtain-overlay.hidden{
    opacity:0;
+   visibility:hidden;
 }
 
 .curtain {
