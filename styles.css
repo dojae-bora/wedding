@@ -1325,7 +1325,7 @@ body {
       0 15px 40px rgba(0,0,0,.08);
 
     overflow:hidden;
-    transform: translateU(40px);
+    transform: translateY(40px);
     opacity:0;
 }
 
@@ -1341,7 +1341,7 @@ body {
 
     text-align:center;
     opacity:0;
-    transform: translateU(10px);
+    transform: translateY(10px);
 }
 
 .curtain-overlay.opening .letter-content{
