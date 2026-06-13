@@ -144,8 +144,12 @@
 }, 500);
     
     setTimeout(() => {
-      curtain.classList.add('hidden');
-    }, 4500);
+      curtain.classList.add('fade-out');
+    }, 3500);
+
+    setTimeout(() => {
+      curtain.style.display = 'none';
+    }, 5000);
   }
 
   /* ═══════════════════════════════════════════
