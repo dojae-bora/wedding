@@ -62,12 +62,13 @@ a {
     align-items: center;
     pointer-events: none;
     opacity:1;
-    transition:opacity 1.5s sase;
+    transition:opacity 1.5s ease;
     background: #f7f3ee;
 }
 
 .curtain-overlay.hidden{
-   opacity:0;
+   opacity:0 !important;
+   pointer-events:none;
 }
 
 .curtain {
