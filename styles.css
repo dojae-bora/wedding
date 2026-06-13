@@ -141,13 +141,13 @@ a {
 
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     line-height: 1.9;
     text-transform: uppercase;
 
-    color: rgba(80, 60, 40, 0.95);
+    color: #7a6857;
     text-align: center;
 
     transition: all 2s ease;
