@@ -61,7 +61,13 @@ a {
     justify-content: center;
     align-items: center;
     pointer-events: none;
-   background: #f7f3ee
+    opacity:1;
+    transition:opacity 1.5s sase;
+    background: #f7f3ee
+}
+
+.curtain-overlay.hidden{
+   opacity:0;
 }
 
 .curtain {
