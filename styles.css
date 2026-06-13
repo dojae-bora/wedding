@@ -63,7 +63,7 @@ a {
     pointer-events: none;
     opacity:1;
     transition:opacity 1.5s sase;
-    background: #f7f3ee
+    background: #f7f3ee;
 }
 
 .curtain-overlay.hidden{
