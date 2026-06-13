@@ -1322,7 +1322,7 @@ body {
     border-radius:6px;
 
     box-shadow:
-      0 15px 40px rgba(0,0,0,.08);
+      0 20px 60px rgba(0,0,0,.06);
 
     overflow:hidden;
     transform: translateY(40px);
@@ -1349,7 +1349,7 @@ body {
    transform:translateY(0);
 
    transition:
-      opacity 1s ease 0.5s,
+      opacity 1s ease 0.8s,
       transform 1s ease 0.5s;
 }
 
@@ -1358,7 +1358,7 @@ body {
    opacity:1;
 
    transition:
-      transform 1.2s ease,
+      transform 1.8s ease,
       opacity 1s ease;
 }
 
