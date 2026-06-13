@@ -141,11 +141,11 @@
     setTimeout(() => {
       document.getElementById('bgm').play();
   curtain.classList.add('opening');
-}, 1200);
+}, 500);
     
     setTimeout(() => {
       curtain.classList.add('hidden');
-    }, 5200);
+    }, 3000);
   }
 
   /* ═══════════════════════════════════════════
