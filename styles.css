@@ -1367,6 +1367,18 @@ body {
     align-items:center;
 
     text-align:center;
+
+    opacity:0;
+   transform:translateY(10px);
+}
+
+.curtain-overlay.opening .letter-content{
+    opacity:1;
+    transform:translateY(0px);
+
+    transition:
+      opacity 1s ease 0.5s,
+      transform 1s ease 0.5s;
 }
 
 .letter-invite{
