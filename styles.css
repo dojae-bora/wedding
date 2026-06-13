@@ -1339,10 +1339,33 @@ body {
     opacity:0;
 }
 
+.letter-card::before{
+   content:'';
+   position:absolute;
+   left:0;
+   right:0;
+   bottom:0;
+
+   height:150px;
+   
+   background:#f1eee8;
+
+   clip-path:polygon(
+      0 35%,
+      50% 100%,
+      100% 35%,
+      100% 100%,
+      0 100%
+      );
+   
+   z-index:3;
+   opacity:,9;
+}
+
 .letter-content{
     position:absolute;
     inset:0;
-    z-index:2;
+    z-index:4;
 
     display:flex;
     flex-direction:column;
