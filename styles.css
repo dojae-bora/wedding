@@ -1312,16 +1312,8 @@ body {
    Letter Intro
    ═══════════════════════════ */
 
-.letter-intro{
-    background:#f7f3ee;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
 .letter-card{
     position:relative;
-
     width:280px;
     height:380px;
 
@@ -1333,27 +1325,8 @@ body {
       0 15px 40px rgba(0,0,0,.08);
 
     overflow:hidden;
-}
-
-.letter-card::before{
-    content:'';
-
-    position:absolute;
-
-    top:0;
-    left:0;
-    right:0;
-
-    height:90px;
-
-    background:
-      linear-gradient(
-        135deg,
-        #f1eee8 50%,
-        #e9e4dd 50%
-      );
-
-    z-index:1;
+    transform: translateU(40px);
+    opacity:0;
 }
 
 .letter-content{
@@ -1367,18 +1340,26 @@ body {
     align-items:center;
 
     text-align:center;
-
     opacity:0;
-   transform:translateY(10px);
+    transform: translateU(10px);
 }
 
 .curtain-overlay.opening .letter-content{
-    opacity:1;
-    transform:translateY(0px);
+   opacity:1;
+   transform:translateY(0);
 
-    transition:
+   transition:
       opacity 1s ease 0.5s,
       transform 1s ease 0.5s;
+}
+
+.curtain-overlay.opening .letter-card{
+   transform:translateY(0);
+   opacity:1;
+
+   transition:
+      transform 1.2s ease,
+      opacity 1s ease;
 }
 
 .letter-invite{
