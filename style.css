@@ -379,6 +379,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3.25rem;
+  color: #d4c3a3;
   z-index: -1;
   opacity: 0.55;
 }
