@@ -83,22 +83,45 @@ function updateCountdown() {
   const secEl = document.getElementById("timer-sec");
   if (!ddayBadge || !daysEl || !hoursEl || !minEl || !secEl) return;
   if (distance < 0) {
-    ddayBadge.innerText = "D-DAY ♡ 축하해주셔서 감사합니다";
+    ddayBadge.innerText = " ♡ 축하해주셔서 감사합니다 ♡ ";
     daysEl.innerText = "00";
     hoursEl.innerText = "00";
     minEl.innerText = "00";
     secEl.innerText = "00";
     return;
   }
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
-  ddayBadge.innerText = `D - ${days}`;
-  daysEl.innerText = String(days).padStart(2, "0");
-  hoursEl.innerText = String(hours).padStart(2, "0");
-  minEl.innerText = String(minutes).padStart(2, "0");
-  secEl.innerText = String(seconds).padStart(2, "0");
+  const today = new Date();
+const todayDate = new Date(
+  today.getFullYear(),
+  today.getMonth(),
+  today.getDate()
+);
+
+const weddingDateOnly = new Date(
+  WEDDING_YEAR,
+  WEDDING_MONTH - 1,
+  WEDDING_DAY
+);
+
+const days = Math.ceil(
+  (weddingDateOnly - todayDate) / (1000 * 60 * 60 * 24)
+);
+
+const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+const minutes = Math.floor((distance / (1000 * 60)) % 60);
+const seconds = Math.floor((distance / 1000) % 60);
+
+// D-Day 표시
+if (days === 0) {
+  ddayBadge.innerText = "D-DAY";
+} else {
+  ddayBadge.innerText = `D-${days}`;
+}
+
+daysEl.innerText = String(days).padStart(2, "0");
+hoursEl.innerText = String(hours).padStart(2, "0");
+minEl.innerText = String(minutes).padStart(2, "0");
+secEl.innerText = String(seconds).padStart(2, "0");
 }
 function openModal(src) {
   const modal = document.getElementById("image-modal");
