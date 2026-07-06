@@ -838,11 +838,3 @@ body {
     max-width:260px;
     border-radius:12px;
 }
-.quote-photo::after{
-    content:"";
-    display:block;
-    width:40px;
-    height:1px;
-    background:#cbbba2;
-    margin:25px auto 0;
-}
