@@ -394,7 +394,8 @@ body {
 .gallery-container {
   width: 100%;
   margin-top: 35px;
-  columns: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 8px;
 }
 .gallery-item {
