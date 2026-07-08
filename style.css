@@ -844,21 +844,35 @@ body {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255,255,255,.2);
-    color: white;
+    width: 46px;
+    height: 46px;
     border: none;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
-    font-size: 34px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(6px);
+    color: white;
+    font-size: 28px;
     cursor: pointer;
     z-index: 999999;
+    transition: 0.2s;
 }
 
 .modal-prev{
-    left: 18px;
+    left: 16px;
 }
 
 .modal-next{
-    right: 18px;
+    right: 16px;
+}
+
+.modal-prev:hover,
+.modal-next:hover{
+    background: rgba(255,255,255,0.3);
+}
+
+.modal-content{
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
