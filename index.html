@@ -248,7 +248,8 @@ onclick="openModal(31)" onerror="this.parentNode.style.display='none';"></div>
     <img class="modal-content"
      id="modal-img"
      alt="확대 이미지"
-     draggable="false">
+     draggable="false"
+     onclick="event.stopPropagation()">
     <div id="modal-counter" class="modal-counter"></div>
     <button class="modal-next" onclick="event.stopPropagation(); changePhoto(1)">›</button>
   </div>
