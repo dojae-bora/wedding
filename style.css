@@ -396,7 +396,8 @@ body {
   margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 8px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 .gallery-item {
     aspect-ratio: 3 / 4;
