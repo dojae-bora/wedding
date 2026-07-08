@@ -844,30 +844,37 @@ body {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
     border: none;
     border-radius: 50%;
-    background: rgba(255,255,255,0.18);
-    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.38);
     color: white;
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 300;
     cursor: pointer;
     z-index: 999999;
-    transition: 0.2s;
 }
 
 .modal-prev{
-    left: 16px;
+    left: 12px;
 }
 
 .modal-next{
-    right: 16px;
+    right: 12px;
 }
 
 .modal-prev:hover,
 .modal-next:hover{
     background: rgba(255,255,255,0.3);
+}
+
+.modal-prev,
+.modal-next,
+.modal-close{
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .modal-content{
