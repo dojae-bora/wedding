@@ -879,7 +879,7 @@ body {
 }
 
 .modal-content{
-    touch-action: none;
+    touch-action: manipulation;
     -webkit-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
