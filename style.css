@@ -838,3 +838,27 @@ body {
     max-width:260px;
     border-radius:12px;
 }
+
+.modal-prev,
+.modal-next{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,.2);
+    color: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 34px;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.modal-prev{
+    left: 18px;
+}
+
+.modal-next{
+    right: 18px;
+}
