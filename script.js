@@ -162,7 +162,6 @@ const galleryImages = [
 ];
 
 function openModal(index){
-
     currentIndex = index;
 
     const modal = document.getElementById("image-modal");
@@ -171,11 +170,15 @@ function openModal(index){
     modalImg.src = galleryImages[currentIndex];
 
     modal.style.display = "flex";
+
+  document.body.style.overflow = "hidden";
 }
 function closeModal() {
   const modal = document.getElementById("image-modal");
   if (modal) {
     modal.style.display = "none";
+
+    document.body.style.overflow = "";
   }
 }
 function changePhoto(direction) {
