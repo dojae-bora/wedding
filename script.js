@@ -178,6 +178,19 @@ function closeModal() {
     modal.style.display = "none";
   }
 }
+function changePhoto(direction) {
+  currentIndex = currentIndex + direction;
+
+  if (currentIndex < 0) {
+    currentIndex = galleryImages.length - 1;
+  }
+
+  if (currentIndex >= galleryImages.length) {
+    currentIndex = 0;
+  }
+
+  document.getElementById("modal-img").src = galleryImages[currentIndex];
+}
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
   const arrow = button.querySelector(".arrow");
