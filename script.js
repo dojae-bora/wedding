@@ -191,6 +191,25 @@ function changePhoto(direction) {
 
   document.getElementById("modal-img").src = galleryImages[currentIndex];
 }
+
+let startX = 0;
+
+document.getElementById("modal-img").addEventListener("touchstart", function(e){
+    startX = e.touches[0].clientX;
+});
+
+document.getElementById("modal-img").addEventListener("touchend", function(e){
+    const endX = e.changedTouches[0].clientX;
+
+    if(startX - endX > 50){
+        changePhoto(1);
+    }
+
+    if(endX - startX > 50){
+        changePhoto(-1);
+    }
+});
+
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
   const arrow = button.querySelector(".arrow");
