@@ -884,3 +884,17 @@ body {
     user-select: none;
     -webkit-user-drag: none;
 }
+
+.modal-counter{
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0.35);
+    padding: 6px 12px;
+    border-radius: 20px;
+    z-index: 999999;
+}
