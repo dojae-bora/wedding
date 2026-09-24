@@ -153,7 +153,7 @@ const galleryImages = [
   "images/photo24.jpg",
   "images/photo25.jpg",
   "images/photo26.jpg",
-  "images/photo29.jpg",
+  "images/photo27.jpg",
   "images/photo30.jpg",
   "images/photo31.jpg",
   "images/photo32.jpg"
